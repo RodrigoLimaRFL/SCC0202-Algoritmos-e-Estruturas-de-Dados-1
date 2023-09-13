@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "ponto.h": "c"
+        "ponto.h": "c",
+        "stdbool.h": "c",
+        "item.h": "c",
+        "labirinto.h": "c"
     }
 }
