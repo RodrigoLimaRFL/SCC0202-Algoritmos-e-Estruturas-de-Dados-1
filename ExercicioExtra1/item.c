@@ -108,5 +108,5 @@ bool item_set_visited(ITEM *item, bool visited){
 
 void item_imprimir(ITEM *item){
      if (item != NULL)
-        printf("(%i, %i)\n", item->posX, item->posY);
+        printf("\n(%i, %i)", item->posX, item->posY);
 }

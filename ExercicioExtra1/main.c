@@ -30,7 +30,7 @@ int main()
     {
         if (!percorrer_labirinto(labirinto))
         {
-            printf("\nSaída não encontrada.\n");
+            printf("Saída não encontrada.\n");
         }
     }
 
