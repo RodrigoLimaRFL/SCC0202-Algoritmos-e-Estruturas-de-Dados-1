@@ -5,14 +5,13 @@
 
     #define FILHO_ESQ 0
     #define FILHO_DIR 1
-
-    typedef struct no_ NO;
+    
     typedef struct ab_ AB;
 
     AB *ab_criar(void);
     bool ab_inserir(AB *T, ITEM *item, int lado, int chave);
     bool ab_remover(AB *T, int chave);
     void ab_apagar_arvore(AB **T);
-    int maior(AB *T);
+    int soma(AB *T);
 
 #endif

@@ -15,30 +15,30 @@ struct ab_
 
 typedef struct no_ NO;
 
-#include "maior.c"
+NO *somaNo(NO *raiz, int *somaValor);
 
-NO *maiorNo(NO *raiz, NO *maiorValor)
+int soma(AB *T)
 {
-    if (raiz == NULL)
-        return NULL;
+    if (T == NULL)
+        return 0;
 
-    if (maiorValor == NULL)
-    {
-        maiorValor = raiz;
-    }
+    int somaValor = 0;
+    somaNo(T->raiz, &somaValor);
 
-    if (item_get_chave(raiz->item) > item_get_chave(maiorValor->item))
-    {
-        maiorValor = raiz;
-    }
+    return (somaValor);
+}
+
+NO *somaNo(NO *raiz, int *somaValor)
+{
+    *somaValor += item_get_chave(raiz->item);
 
     if (raiz->esq != NULL)
-        maiorValor = maiorNo(raiz->esq, maiorValor);
+        somaNo(raiz->esq, somaValor);
 
     if (raiz->dir != NULL)
-        maiorValor = maiorNo(raiz->dir, maiorValor);
+        somaNo(raiz->dir, somaValor);
 
-    return (maiorValor);
+    return (raiz);
 }
 
 void troca_max_esq(NO *troca, NO *raiz, NO *ant)
