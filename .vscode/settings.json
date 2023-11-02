@@ -1,8 +1,9 @@
 {
-    "files.associations": {
-        "ponto.h": "c",
-        "stdbool.h": "c",
-        "item.h": "c",
-        "labirinto.h": "c"
-    }
+	"files.associations": {
+		"ponto.h": "c",
+		"stdbool.h": "c",
+		"item.h": "c",
+		"labirinto.h": "c",
+		"ab.h": "c"
+	}
 }
